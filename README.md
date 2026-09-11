@@ -6,7 +6,7 @@
 ---
 ## 📖 Project Overview
 
-A data-center operational performance and infrastructure monitoring dataset.
+A data-center operational performance and infrastructure monitoring dataset. This dataset represents a data-center operations environment where multiple clients use computing infrastructure, while telemetry data is collected to monitor infrastructure utilization, energy consumption, thermal conditions, and system health.
 
 
 ---
