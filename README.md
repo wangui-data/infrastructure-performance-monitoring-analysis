@@ -1,7 +1,8 @@
 # infrastructure-performance-monitoring-analysis
 
+# Data Center Infrastructure & Operations Analytics
 
-**Excel** · **EDA**· **Power BI** · **DAX** · **Power Query** · **Data Modeling** · **Business Intelligence**
+**MySQL** · **Excel** · **EDA**· **Power BI** · **DAX** · **Power Query** · **Data Modeling** · **Business Intelligence**
 
 ---
 ## 📖 Project Overview
