@@ -73,6 +73,32 @@ How are the business operations performing over time?
 
 # 🚀 Project Objectives
 
+✔ Perform data quality checks on `Thermal_Reading_C` and identify potentially faulty sensor readings.
+
+✔ Analyze hardware asset status by comparing `Online` and `Decommissioned` assets.
+
+✔ Calculate the proportion of clients classified as `Enterprise`.
+
+✔ Identify industries with the highest average daily system alerts.
+
+✔ Analyze power consumption by `Asset_Model` and evaluate energy efficiency across newer and older models.
+
+✔ Compare server thermal performance across the `Nairobi East` and `Mombasa` regions.
+
+✔ Compare average CPU utilization across `Premium` and `Standard` contract tiers.
+
+✔ Identify high-utilization clients with average CPU utilization above 85% and more than 2 system alerts.
+
+✔ Detect server racks where power consumption exceeds rated `Capacity_kW`.
+
+✔ Analyze month-over-month changes in total data-center power consumption.
+
+✔ Create reusable SQL queries for data extraction, filtering, aggregation and analysis.
+
+✔ Develop reusable DAX measures and calculated metrics in Power BI.
+
+✔ Build an interactive Power BI dashboard to visualize operational performance and identify potential infrastructure issues.
+
 ---
 
 # 🛠 Tools Used
