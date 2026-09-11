@@ -79,7 +79,7 @@ How are the business operations performing over time?
 | Tool             | Purpose                                             |
 | ---------------- | --------------------------------------------------- |
 | **Excel**        | Exploratory Data Analysis                           |
-| ** MySQL **      | Extracting raw data and profiling your metrics      |
+| **MySQL**      | Extracting raw data and profiling your metrics      |
 | **Power Bi**     | Data modeling, visualization, dashboard development |
 | **GitHub**       | Project documentation and portfolio presentation    |
 
