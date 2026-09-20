@@ -256,13 +256,21 @@ Analysis includes:
 
 The analysis uses thresholds to identify records for further investigation.
 
-- High CPU Utilization
-Avg_CPU_Utilization_Pct > 85%
-- Elevated Thermal Reading
-Thermal_Reading_C > 30°C
-- High Alert Activity
-System_Alerts > 2
+### High CPU Utilization
 
+```text
+Avg_CPU_Utilization_Pct > 85%
+```
+### Elevated Thermal Reading
+
+```text
+Thermal_Reading_C > 30°C
+```
+### High Alert Activity
+
+```text
+System_Alerts > 2
+```
 These are analytical thresholds used in this project, not universal data center operating limits.
 
 ---
