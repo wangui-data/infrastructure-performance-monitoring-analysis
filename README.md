@@ -300,7 +300,8 @@ GROUP BY a.Asset_Model
 ORDER BY Total_Power_Consumed DESC;
 ```
 ---
-## 📊 Power BI Dashboard
+
+# 📊 Power BI Dashboard
 
 The Power BI report contains two main pages.
 
@@ -378,7 +379,56 @@ The following checks are performed before interpreting the results.
 Therefore, power consumption should not be directly compared with rated capacity unless the telemetry measurement interval is known and the units have been appropriately aligned.
 
 Similarly, thresholds such as CPU utilization above 85% and thermal readings above 30°C are used for **investigation within this project** and should not automatically be interpreted as infrastructure failure or unsafe operating conditions.
+
 ---
+# 🔎 Key Findings
+
+*To be completed after the analysis has been validated.*
+
+### 1. Energy Consumption
+
+[Finding]
+
+### 2. Infrastructure Utilization
+
+[Finding]
+
+### 3. Thermal Performance
+
+[Finding]
+
+### 4. System Alerts
+
+[Finding]
+
+### 5. Regional Performance
+
+[Finding]
+
+---
+
+# 💡 Business Recommendations
+
+*To be completed after the findings have been validated.*
+
+Recommendations will focus on:
+
+- Infrastructure utilization
+- Energy efficiency
+- Thermal monitoring
+- Preventive maintenance
+- Capacity planning
+- Asset management
+
+---
+
+# 📌 Executive Summary
+
+*To be completed after the analysis.*
+
+This analysis evaluates data center infrastructure performance across energy consumption, infrastructure utilization, thermal conditions, and system alerts.
+
+The final summary and recommendations will be based on patterns identified in the telemetry data and will focus on supporting infrastructure monitoring, operational efficiency, and data-driven decision-making.
 
 ---
 
