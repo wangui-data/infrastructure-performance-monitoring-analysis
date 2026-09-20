@@ -7,8 +7,18 @@
 ---
 ## 📖 Project Overview
 
-A data-center operational performance and infrastructure monitoring dataset. This dataset represents a data-center operations environment where multiple clients use computing infrastructure, while telemetry data is collected to monitor infrastructure utilization, energy consumption, thermal conditions, and system health.
+This project analyzes data center infrastructure and operational performance using client, asset, and telemetry data.
 
+The analysis focuses on:
+
+- Energy consumption
+- CPU utilization
+- Thermal conditions
+- System alerts
+- Asset operational status
+- Client and regional performance
+
+The goal is to identify patterns that may indicate high infrastructure utilization, unusual energy consumption, thermal issues, or increased system alert activity.
 
 ---
 
@@ -18,56 +28,43 @@ The Data Centre wants to understand **how efficiently and reliably the data cent
 
 The analysis focuses on five key business areas.
 
+### ⚡ Energy Consumption
 
-### 1️⃣ Client Performance Analysis
+- What is the total power consumption?
+- Which clients consume the most energy?
+- Which asset models consume the most energy?
+- How does power consumption change over time?
+- How does energy consumption vary by region?
 
-How are the clients performing over time?
+### 🖥️ Infrastructure Utilization
 
-* Which industries (e.g., Fintech, Healthcare, Media) make up the largest share of our customer base?
-* What percentage of our clients belong to the 'Enterprise' Company_Size?
-* Which Contract_Tier, Premium vs. Standard, is consuming the most compute power (Avg_CPU_Utilization_Pct)?
-* How does client contract tier (Contract_Tier) affect the average workload/CPU utilization placed on data center assets?
-* Which Industry generates the highest number of average System_Alerts per day?
-* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
+- What is the average CPU utilization?
+- Which contract tiers have the highest CPU utilization?
+- Which clients have the highest infrastructure utilization?
+- Which assets operate at high CPU utilization?
 
----
+### 🌡️ Thermal Performance
 
-### 2️⃣ Asset Utilization & Operational Health
+- What are the minimum, maximum, and average thermal readings?
+- Which asset models have the highest average thermal readings?
+- Which regions have the highest average thermal readings?
+- Is higher CPU utilization associated with higher thermal readings?
+- Are there potentially abnormal temperature readings?
 
-Are our assets being properly utilized?
+### 🚨 System Reliability
 
-* Which asset models consume the most power?
-* How many total hardware assets are currently marked as 'Decommissioned' versus 'Online' in Dim_Asset?
-* Which specific server racks (Asset_ID) are pulling power that exceeds their rated Capacity_kW?
-* What is the total Power_Consumed_kWh broken down by Asset_Model? (Do newer models consume less power?)
-* Which Asset_Model runs at the highest average thermal reading (Thermal_Reading_C), and does it correlate with high CPU utilization?
-  
----
+- How many system alerts were recorded?
+- Which clients generate the most alerts?
+- Which assets generate the most alerts?
+- Which asset models experience the most alerts?
+- Are system alerts associated with high CPU utilization or elevated thermal readings?
 
-### 3️⃣ Infrastructure Telemetry & Industry Analysis
+### 🌍 Regional Performance
 
-How are the business operations performing over time?
-
-* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
-* Who are the top 10 clients (Client_ID) generating the most system alerts (System_Alerts) across all their operational assets?
-* What is the month-over-month trend for total power consumption across the entire data center?
-* What are the maximum and minimum Thermal_Reading_C in the dataset? Are there any impossible temperatures (e.g., below 0°C or above 100°C) that indicate broken sensors?
-
----
-
-### 4️⃣ Regional & Portfolio Efficiency
-
-* Are clients in the 'Nairobi East' region running their servers hotter (higher average Thermal_Reading_C) than clients in 'Mombasa'?
-* What is the total power consumption per HQ_Region (e.g., Nairobi East, Nairobi West, Kigali, Mombasa, Dar es Salaam)?
-* Which regional clients experience the highest average number of system alerts per telemetry log?
-  
----
-
-### 5️⃣ Risk & Maintenance Monitoring
-
-* Can you list the Client_ID and Company_Size of any client whose average CPU utilization is above 85% and has generated more than 2 system alerts?
-* Which client-asset combinations are generating the highest total volume of System_Alerts?
-* What percentage of total telemetry records register both high thermal readings (>30°C) and active system alerts (>0)?
+- Which regions consume the most energy?
+- Which regions have the highest CPU utilization?
+- Which regions have the highest thermal readings?
+- Which regions experience the most system alerts?
 
 ---
 
@@ -163,61 +160,82 @@ It contains measurements over time. This is where you can actually **measure per
 | `System_Alerts`    | Whether an issue/alert occurred    |
 
 ---
+# 🏗️ Data Model
 
+The Power BI model uses a star-schema structure.
+
+```text
+                 Dim_Date
+                     |
+                     |
+                     ↓
+       Fact_Infrastructure_Telemetry
+              /                 \
+             ↓                   ↓
+        Dim_Client          Dim_Asset
+
+---
 
 # 🧹 Data Preparation
 
----
+The data preparation process included:
 
-# ❓ Key Business Questions
-
-## ⚡ Energy efficiency
-
-* What is the total power consumed?
-* Average power consumption
-* Power consumption by client
-* Power consumption by asset
-* Power consumption by asset model
-* Power consumption by region
-* Power consumption over time
-* Power consumption relative to asset capacity
+Reviewing data types
+Checking missing values
+Checking duplicate identifiers
+Validating client and asset IDs
+Converting date fields
+Checking CPU utilization ranges
+Checking thermal readings
+Reviewing asset status values
+Creating the date dimension for Power BI
 
 ---
 
-## 🖥️ Infrastructure utilization
+# 🔎 Analysis
 
-* Which assets are operating near their capacity?
-* Are particular clients consistently consuming high capacity?
-* Which assets are severely underutilized?
+### Energy
 
----
+Analysis includes:
 
-## 🌡️ Performance and thermal conditions
+Total power consumption
+Average power consumption
+Power consumption by client
+Power consumption by asset
+Power consumption by asset model
+Power consumption by region
+Monthly power consumption
 
-* Does higher CPU utilization lead to higher power consumption?
-* Does higher power consumption correspond with higher temperatures?
-* At what temperature do system alerts become more common?
+### Utilization
 
----
+Analysis includes:
 
-## 🚨 System reliability/alerts
+Average CPU utilization
+CPU utilization by contract tier
+CPU utilization by client
+CPU utilization by asset
+High-utilization assets
 
-* How many alerts occurred?
-* Which assets generated the most alerts?
-* Which clients experienced the most alerts?
-* Which asset models have the highest alert rate?
-* Are alerts associated with high temperatures?
-* Are alerts associated with high CPU utilization?
-* Are older assets generating more alerts?
+### Thermal Conditions
 
----
-## 🌍 Regional Performance
+Analysis includes:
 
-* Which regions consume the most energy?
-* Which regions have the highest CPU utilization?
-* Which regions have the highest thermal readings?
-* Which regions generate the most system alerts?
-* How does infrastructure performance differ between regions?
+Minimum temperature
+Maximum temperature
+Average temperature
+Temperature by asset model
+Temperature by region
+Potentially abnormal readings
+Reliability
+
+### Analysis includes:
+
+Total system alerts
+Alerts by client
+Alerts by asset
+Alerts by asset model
+Alerts by industry
+Alerts by region
 
 ---
 
@@ -232,6 +250,13 @@ It contains measurements over time. This is where you can actually **measure per
 |Alert Rate	| System alerts relative to telemetry observations |
 |Online Asset Count	| Number of assets with Operational_Status = Online |
 |Decommissioned Asset Count |	Number of assets with Operational_Status = Decommissioned|
+
+---
+
+
+---
+
+
 
 ---
 
