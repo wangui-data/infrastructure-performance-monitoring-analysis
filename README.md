@@ -274,11 +274,115 @@ System_Alerts > 2
 These are analytical thresholds used in this project, not universal data center operating limits.
 
 ---
+# 🗄️ SQL Analysis
 
+MySQL was used for:
 
+- Data profiling
+- Aggregation
+- Filtering
+- Joins
+- Data quality checks
+- Client-level analysis
+- Asset-level analysis
+- Time-based analysis
+
+### Example
+
+```sql
+SELECT
+    a.Asset_Model,
+    SUM(t.Power_Consumed_kWh) AS Total_Power_Consumed
+FROM Fact_Infrastructure_Telemetry t
+JOIN Dim_Asset a
+    ON t.Asset_ID = a.Asset_ID
+GROUP BY a.Asset_Model
+ORDER BY Total_Power_Consumed DESC;
+```
+---
+## 📊 Power BI Dashboard
+
+The Power BI report contains two main pages.
+
+### Data Center Overview
+
+Provides a view of the infrastructure portfolio.
+
+Includes:
+
+- Clients by industry
+- Clients by company size
+- Clients by contract tier
+- Asset operational status
+- Assets by model
+- Asset installation trends
+- Capacity by asset model
 
 ---
 
+### Infrastructure Performance
+
+Focuses on operational performance.
+
+Includes:
+
+- Monthly power consumption
+- Power consumption by asset model
+- CPU utilization by contract tier
+- Thermal readings by region
+- System alerts by industry
+- High CPU utilization and alerts
+- Infrastructure utilization monitoring
+
+---
+
+# 🔬 Data Quality
+
+The following checks are performed before interpreting the results.
+
+### Thermal Readings
+
+- Minimum value
+- Maximum value
+- Values below 0°C
+- Values above 100°C
+- Missing values
+
+### CPU Utilization
+
+- Values below 0%
+- Values above 100%
+- Missing values
+
+### Identifiers
+
+- Duplicate telemetry IDs
+- Missing client IDs
+- Missing asset IDs
+- Invalid client references
+- Invalid asset references
+
+### Asset Data
+
+- Duplicate asset IDs
+- Missing installation dates
+- Missing capacity values
+- Invalid operational statuses
+
+---
+
+# ⚠️ Analytical Considerations
+
+`Power_Consumed_kWh` and `Capacity_kW` represent different units.
+
+Therefore, power consumption should not be directly compared with rated capacity unless the telemetry measurement interval is known and the units have been appropriately aligned.
+
+Similarly, thresholds such as CPU utilization above 85% and thermal readings above 30°C are used for **investigation within this project** and should not automatically be interpreted as infrastructure failure or unsafe operating conditions.
+---
+
+---
+
+---
 👤 Author
 
 Wangui Esther
