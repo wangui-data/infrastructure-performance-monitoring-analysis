@@ -1,0 +1,19 @@
+Table,Column,Data Type,Issue,Evidence,Severity,Cleaning Recommendation
+Dim_Client,Client_ID,INT,No major issue identified,,,
+Dim_Client,Company_Size,VARCHAR,Missing values,9 Missing (4.5%),Low,Investigate missing records
+Dim_Client,Industry,VARCHAR,Missing values,18 Missing(9%),Medium,Investigate missing records
+Dim_Client,Contract_Tier,VARCHAR,Missing values,13 Missing(6.5% ),Low,Investigate missing records
+Dim_Client,HQ_Region,VARCHAR,No major issue identified,-,-,
+Dim_Asset,Asset_ID,INT,No major issue identified,-,-,
+Dim_Asset,Asset_Model,VARCHAR,No major issue identified,-,-,
+Dim_Asset,Capacity_kW,INT,No major issue identified,-,-,
+Dim_Asset,Installation_Date,DATE,Missing values,12 Missing(12%),Medium,Investigate missing records
+Dim_Asset,Operational_Status,VARCHAR,Missing values,9 Missing(9%),Medium,Investigate missing records
+Fact_Infrastructure_Telemetry,Telemetry_ID,INT,No major issue identified,-,-,
+Fact_Infrastructure_Telemetry,Date_ID,INT,No major issue identified,-,-,
+Fact_Infrastructure_Telemetry,Client_ID,INT,No major issue identified,-,-,
+Fact_Infrastructure_Telemetry,Asset_ID,INT,No major issue identified,-,-,
+Fact_Infrastructure_Telemetry,Power_Consumed_kWh,DECIMAL,Missing values,513  Missing(5.13%),Low,Investigate missing records
+Fact_Infrastructure_Telemetry,Avg_CPU_Utilization_Pct,DECIMAL,Missing values,845 Missing(8.45%),Medium,Investigate missing records
+Fact_Infrastructure_Telemetry,Thermal_Reading_C,DECIMAL,Missing values,199 Missing(1.99%),Low,Investigate missing records
+Fact_Infrastructure_Telemetry,System_Alerts,INT,Missing values,1976 Missing (19.76%),High,Investigate before SQL cleaning
