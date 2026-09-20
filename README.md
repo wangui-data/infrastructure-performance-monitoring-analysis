@@ -180,15 +180,15 @@ The Power BI model uses a star-schema structure.
 
 The data preparation process included:
 
-Reviewing data types
-Checking missing values
-Checking duplicate identifiers
-Validating client and asset IDs
-Converting date fields
-Checking CPU utilization ranges
-Checking thermal readings
-Reviewing asset status values
-Creating the date dimension for Power BI
+- Reviewing data types
+- Checking missing values
+- Checking duplicate identifiers
+- Validating client and asset IDs
+- Converting date fields
+- Checking CPU utilization ranges
+- Checking thermal readings
+- Reviewing asset status values
+- Creating the date dimension for Power BI
 
 ---
 
@@ -198,44 +198,44 @@ Creating the date dimension for Power BI
 
 Analysis includes:
 
-Total power consumption
-Average power consumption
-Power consumption by client
-Power consumption by asset
-Power consumption by asset model
-Power consumption by region
-Monthly power consumption
+- Total power consumption
+- Average power consumption
+- Power consumption by client
+- Power consumption by asset
+- Power consumption by asset model
+- Power consumption by region
+- Monthly power consumption
 
 ### Utilization
 
 Analysis includes:
 
-Average CPU utilization
-CPU utilization by contract tier
-CPU utilization by client
-CPU utilization by asset
-High-utilization assets
+- Average CPU utilization
+- CPU utilization by contract tier
+- CPU utilization by client
+- CPU utilization by asset
+- High-utilization assets
 
 ### Thermal Conditions
 
 Analysis includes:
 
-Minimum temperature
-Maximum temperature
-Average temperature
-Temperature by asset model
-Temperature by region
-Potentially abnormal readings
-Reliability
+- Minimum temperature
+- Maximum temperature
+- Average temperature
+- Temperature by asset model
+- Temperature by region
+- Potentially abnormal readings
+- Reliability
 
 ### Analysis includes:
 
-Total system alerts
-Alerts by client
-Alerts by asset
-Alerts by asset model
-Alerts by industry
-Alerts by region
+- Total system alerts
+- Alerts by client
+- Alerts by asset
+- Alerts by asset model
+- Alerts by industry
+- Alerts by region
 
 ---
 
@@ -252,7 +252,18 @@ Alerts by region
 |Decommissioned Asset Count |	Number of assets with Operational_Status = Decommissioned|
 
 ---
+# 🧮 Analytical Flags
 
+The analysis uses thresholds to identify records for further investigation.
+
+- High CPU Utilization
+Avg_CPU_Utilization_Pct > 85%
+- Elevated Thermal Reading
+Thermal_Reading_C > 30°C
+- High Alert Activity
+System_Alerts > 2
+
+These are analytical thresholds used in this project, not universal data center operating limits.
 
 ---
 
