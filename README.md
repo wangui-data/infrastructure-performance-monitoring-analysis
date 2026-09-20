@@ -173,7 +173,7 @@ The Power BI model uses a star-schema structure.
               /                 \
              ↓                   ↓
         Dim_Client          Dim_Asset
-
+```
 ---
 
 # 🧹 Data Preparation
