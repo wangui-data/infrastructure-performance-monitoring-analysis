@@ -1,0 +1,201 @@
+Client_ID,Company_Size,Industry,Contract_Tier,HQ_Region
+101,Startup,Fintech,Dedicated,Kigali
+102,Startup,Media,Standard,Nairobi West
+103,Enterprise,Fintech,Premium,Kigali
+104,Mid-Market,Fintech,,Nairobi West
+105,Mid-Market,Healthcare,Standard,Dar es Salaam
+106,Mid-Market,,Premium,Dar es Salaam
+107,Startup,SaaS,Standard,Nairobi East
+108,Startup,SaaS,Dedicated,Kigali
+109,Public Sector,SaaS,Premium,Dar es Salaam
+110,Startup,Healthcare,Standard,Dar es Salaam
+111,Startup,SaaS,Dedicated,Nairobi East
+112,Startup,Fintech,Dedicated,Nairobi East
+113,Mid-Market,,Dedicated,Kigali
+114,Mid-Market,SaaS,Dedicated,Nairobi West
+115,Startup,,Dedicated,Kigali
+116,Mid-Market,SaaS,Dedicated,Nairobi West
+117,Public Sector,E-Commerce,Dedicated,Nairobi East
+118,Mid-Market,SaaS,Standard,Mombasa
+119,Public Sector,E-Commerce,Premium,Kigali
+120,Enterprise,SaaS,Premium,Mombasa
+121,Startup,Media,Standard,Nairobi West
+122,Mid-Market,SaaS,Dedicated,Kigali
+123,Public Sector,Healthcare,Premium,Mombasa
+124,Enterprise,Healthcare,Dedicated,Mombasa
+125,Enterprise,E-Commerce,Premium,Kigali
+126,Mid-Market,Healthcare,Dedicated,Mombasa
+127,Mid-Market,Fintech,Standard,Kigali
+128,Enterprise,Media,Dedicated,Mombasa
+129,Startup,Media,Premium,Nairobi East
+130,Startup,Fintech,Dedicated,Kigali
+131,Public Sector,E-Commerce,Premium,Nairobi East
+132,Startup,Fintech,Dedicated,Dar es Salaam
+133,Enterprise,Fintech,Premium,Nairobi East
+134,Enterprise,Media,Premium,Mombasa
+135,Enterprise,SaaS,Premium,Nairobi West
+136,Startup,,Dedicated,Nairobi East
+137,,Media,Premium,Nairobi East
+138,Startup,Healthcare,Dedicated,Nairobi East
+139,Public Sector,Fintech,Standard,Nairobi West
+140,Startup,Media,Standard,Nairobi West
+141,Enterprise,Fintech,Premium,Nairobi East
+142,Enterprise,Healthcare,Dedicated,Dar es Salaam
+143,Mid-Market,Fintech,Premium,Nairobi West
+144,Startup,Media,Dedicated,Nairobi West
+145,Startup,Fintech,Dedicated,Nairobi West
+146,Mid-Market,Healthcare,Standard,Kigali
+147,Enterprise,SaaS,,Nairobi East
+148,Startup,Fintech,Dedicated,Dar es Salaam
+149,Mid-Market,Media,Premium,Nairobi West
+150,Startup,Healthcare,Premium,Kigali
+151,Public Sector,,Dedicated,Mombasa
+152,Enterprise,Media,Standard,Mombasa
+153,Public Sector,Fintech,Premium,Nairobi West
+154,Enterprise,,Premium,Dar es Salaam
+155,Mid-Market,Fintech,Standard,Dar es Salaam
+156,Enterprise,SaaS,,Nairobi East
+157,Enterprise,Media,Dedicated,Nairobi West
+158,Mid-Market,Media,Dedicated,Mombasa
+159,Enterprise,Media,Dedicated,Nairobi East
+160,Startup,E-Commerce,Premium,Dar es Salaam
+161,Mid-Market,E-Commerce,Premium,Nairobi East
+162,Mid-Market,Healthcare,Premium,Mombasa
+163,Mid-Market,E-Commerce,Premium,Dar es Salaam
+164,Public Sector,Healthcare,Dedicated,Kigali
+165,Public Sector,E-Commerce,Standard,Kigali
+166,Enterprise,SaaS,Dedicated,Nairobi West
+167,Mid-Market,Healthcare,Premium,Nairobi East
+168,Enterprise,E-Commerce,Dedicated,Dar es Salaam
+169,,SaaS,Standard,Nairobi West
+170,Mid-Market,E-Commerce,Dedicated,Nairobi East
+171,Startup,Fintech,Standard,Mombasa
+172,Enterprise,,Premium,Dar es Salaam
+173,Public Sector,SaaS,Dedicated,Nairobi East
+174,,,Dedicated,Dar es Salaam
+175,Startup,Media,Dedicated,Nairobi East
+176,Mid-Market,,Dedicated,Mombasa
+177,Enterprise,Fintech,Premium,Dar es Salaam
+178,Mid-Market,Media,,Kigali
+179,Public Sector,Healthcare,Standard,Mombasa
+180,Public Sector,Media,Dedicated,Nairobi East
+181,Public Sector,E-Commerce,Premium,Dar es Salaam
+182,Mid-Market,Healthcare,Standard,Mombasa
+183,Enterprise,E-Commerce,Standard,Nairobi East
+184,Mid-Market,Fintech,Standard,Kigali
+185,Mid-Market,Healthcare,Standard,Kigali
+186,Enterprise,E-Commerce,,Nairobi East
+187,Public Sector,E-Commerce,Standard,Kigali
+188,Public Sector,Healthcare,Premium,Mombasa
+189,Enterprise,SaaS,Dedicated,Kigali
+190,Mid-Market,Media,Standard,Nairobi West
+191,Mid-Market,E-Commerce,Premium,Kigali
+192,Public Sector,Media,Premium,Nairobi West
+193,Startup,Media,Dedicated,Dar es Salaam
+194,Startup,Fintech,Dedicated,Mombasa
+195,Startup,Media,Standard,Dar es Salaam
+196,Mid-Market,,Dedicated,Dar es Salaam
+197,,Fintech,Dedicated,Kigali
+198,Public Sector,Healthcare,Premium,Kigali
+199,Startup,E-Commerce,Premium,Kigali
+200,Public Sector,Fintech,Premium,Dar es Salaam
+201,Public Sector,Fintech,,Mombasa
+202,Public Sector,Media,Standard,Mombasa
+203,Enterprise,Healthcare,Dedicated,Nairobi West
+204,,,Dedicated,Nairobi East
+205,Startup,E-Commerce,Standard,Mombasa
+206,Enterprise,Media,Standard,Kigali
+207,Enterprise,Healthcare,Premium,Nairobi West
+208,Startup,E-Commerce,Standard,Kigali
+209,Enterprise,Healthcare,Standard,Dar es Salaam
+210,Public Sector,E-Commerce,Dedicated,Dar es Salaam
+211,Mid-Market,Media,Dedicated,Kigali
+212,Public Sector,SaaS,Premium,Mombasa
+213,Startup,E-Commerce,Standard,Nairobi East
+214,Enterprise,Fintech,Dedicated,Kigali
+215,Mid-Market,Fintech,Standard,Mombasa
+216,Startup,SaaS,Standard,Nairobi West
+217,Enterprise,E-Commerce,,Kigali
+218,,Fintech,Standard,Nairobi West
+219,Mid-Market,Fintech,Premium,Mombasa
+220,Enterprise,E-Commerce,Dedicated,Mombasa
+221,Mid-Market,Healthcare,Dedicated,Mombasa
+222,Startup,E-Commerce,Dedicated,Mombasa
+223,,Healthcare,Dedicated,Dar es Salaam
+224,Public Sector,SaaS,Premium,Mombasa
+225,Startup,Media,Premium,Dar es Salaam
+226,Startup,,Dedicated,Nairobi East
+227,Enterprise,,Dedicated,Dar es Salaam
+228,Enterprise,Fintech,Dedicated,Nairobi West
+229,Mid-Market,Fintech,Premium,Nairobi East
+230,Startup,Fintech,Dedicated,Nairobi West
+231,Mid-Market,Healthcare,Premium,Kigali
+232,Startup,Media,Standard,Kigali
+233,Startup,Fintech,Dedicated,Dar es Salaam
+234,Public Sector,E-Commerce,Premium,Nairobi West
+235,Startup,Media,Premium,Kigali
+236,Mid-Market,Media,,Kigali
+237,Mid-Market,Healthcare,Standard,Kigali
+238,Public Sector,SaaS,Dedicated,Nairobi East
+239,Mid-Market,Healthcare,Premium,Nairobi East
+240,Enterprise,Fintech,Dedicated,Mombasa
+241,Public Sector,E-Commerce,Premium,Nairobi West
+242,Mid-Market,E-Commerce,Dedicated,Kigali
+243,Mid-Market,Fintech,Standard,Nairobi West
+244,Enterprise,E-Commerce,Premium,Mombasa
+245,Public Sector,Healthcare,Premium,Dar es Salaam
+246,Enterprise,Healthcare,Standard,Mombasa
+247,Public Sector,Fintech,Dedicated,Kigali
+248,Public Sector,E-Commerce,Premium,Dar es Salaam
+249,,Media,Standard,Dar es Salaam
+250,Mid-Market,SaaS,Premium,Mombasa
+251,Mid-Market,Media,Premium,Kigali
+252,Startup,Healthcare,Premium,Dar es Salaam
+253,Enterprise,Healthcare,,Mombasa
+254,Startup,,Standard,Mombasa
+255,Mid-Market,Healthcare,Standard,Kigali
+256,Mid-Market,SaaS,Standard,Mombasa
+257,Startup,Fintech,Standard,Mombasa
+258,Startup,Healthcare,,Mombasa
+259,Startup,,Dedicated,Nairobi West
+260,Mid-Market,SaaS,Standard,Nairobi East
+261,Startup,Healthcare,Dedicated,Nairobi West
+262,Startup,E-Commerce,Standard,Mombasa
+263,Enterprise,,Standard,Nairobi East
+264,Startup,Fintech,Premium,Dar es Salaam
+265,Mid-Market,SaaS,Premium,Nairobi West
+266,Enterprise,Fintech,Premium,Nairobi West
+267,Public Sector,SaaS,Dedicated,Nairobi West
+268,Mid-Market,Healthcare,Premium,Kigali
+269,Mid-Market,Healthcare,Premium,Mombasa
+270,Public Sector,SaaS,Standard,Dar es Salaam
+271,Mid-Market,E-Commerce,Standard,Dar es Salaam
+272,Public Sector,E-Commerce,,Dar es Salaam
+273,Public Sector,Healthcare,Premium,Mombasa
+274,Mid-Market,Healthcare,Dedicated,Nairobi East
+275,Startup,Fintech,Dedicated,Nairobi West
+276,Startup,Healthcare,Standard,Mombasa
+277,Public Sector,SaaS,Dedicated,Nairobi West
+278,Enterprise,E-Commerce,Premium,Mombasa
+279,Public Sector,E-Commerce,Premium,Nairobi West
+280,Public Sector,Fintech,Standard,Mombasa
+281,Public Sector,E-Commerce,Premium,Nairobi East
+282,Startup,E-Commerce,Premium,Dar es Salaam
+283,,Media,Premium,Nairobi West
+284,Startup,SaaS,Premium,Mombasa
+285,Public Sector,Media,Dedicated,Nairobi East
+286,Enterprise,E-Commerce,Dedicated,Nairobi East
+287,Startup,,Dedicated,Dar es Salaam
+288,Mid-Market,Fintech,Dedicated,Mombasa
+289,Mid-Market,E-Commerce,Dedicated,Nairobi West
+290,Mid-Market,Healthcare,Standard,Kigali
+291,Public Sector,Media,,Nairobi East
+292,Mid-Market,,Standard,Nairobi East
+293,Public Sector,Fintech,,Dar es Salaam
+294,Mid-Market,Fintech,Premium,Mombasa
+295,Enterprise,Media,Premium,Kigali
+296,Public Sector,SaaS,Standard,Kigali
+297,Mid-Market,E-Commerce,Premium,Kigali
+298,Startup,E-Commerce,Premium,Mombasa
+299,Public Sector,SaaS,Dedicated,Nairobi West
+300,Startup,Media,Dedicated,Nairobi East
