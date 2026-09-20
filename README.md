@@ -211,7 +211,27 @@ It contains measurements over time. This is where you can actually **measure per
 * Are older assets generating more alerts?
 
 ---
+## 🌍 Regional Performance
 
+* Which regions consume the most energy?
+* Which regions have the highest CPU utilization?
+* Which regions have the highest thermal readings?
+* Which regions generate the most system alerts?
+* How does infrastructure performance differ between regions?
+
+---
+
+# 📐 Key KPI Definitions
+|KPI	        | Definition|
+|-------------|------------|
+|Total Power Consumption	| Sum of Power_Consumed_kWh |
+|Average Power Consumption |	Average Power_Consumed_kWh per telemetry record |
+|Average CPU Utilization |	Average Avg_CPU_Utilization_Pct |
+|Average Thermal Reading |	Average Thermal_Reading_C |
+|Total System Alerts | Sum of System_Alerts |
+|Alert Rate	| System alerts relative to telemetry observations |
+|Online Asset Count	| Number of assets with Operational_Status = Online |
+|Decommissioned Asset Count |	Number of assets with Operational_Status = Decommissioned|
 
 ---
 
