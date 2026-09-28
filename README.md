@@ -397,7 +397,7 @@ Similarly, thresholds such as CPU utilization above 85% and thermal readings abo
 
 ### 1. Energy Consumption
 
-[Finding]
+#### Total Power Consumed: Total power consumption stands at 828.62K kWh
 
 ### 2. Infrastructure Utilization
 
