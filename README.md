@@ -5,6 +5,16 @@
 **MySQL** · **Excel** · **EDA**· **Power BI** · **DAX** · **Power Query** · **Data Modeling** · **Business Intelligence**
 
 ---
+# 📌 Executive Summary
+
+
+
+This analysis evaluates data center infrastructure performance across energy consumption, infrastructure utilization, thermal conditions, and system alerts.
+
+The final summary and recommendations will be based on patterns identified in the telemetry data and will focus on supporting infrastructure monitoring, operational efficiency, and data-driven decision-making.
+
+---
+
 ## 📖 Project Overview
 
 This project analyzes data center infrastructure and operational performance using client, asset, and telemetry data.
@@ -422,15 +432,7 @@ Recommendations will focus on:
 
 ---
 
-# 📌 Executive Summary
 
-
-
-This analysis evaluates data center infrastructure performance across energy consumption, infrastructure utilization, thermal conditions, and system alerts.
-
-The final summary and recommendations will be based on patterns identified in the telemetry data and will focus on supporting infrastructure monitoring, operational efficiency, and data-driven decision-making.
-
----
 
 👤 Author
 
