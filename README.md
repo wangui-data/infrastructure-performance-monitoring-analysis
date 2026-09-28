@@ -447,22 +447,27 @@ Similarly, thresholds such as CPU utilization above 85% and thermal readings abo
 
 Recommendations will focus on:
 
-- Infrastructure utilization and Asset management
+- ### Infrastructure utilization and Asset management
 
-Address Maintenance Backlog: With over 40% of total assets offline (23.81% under maintenance and 16.67% decommissioned), evaluate the 20 maintenance assets to return them online quickly and increase active capacity.
+**Address Maintenance Backlog:** With over 40% of total assets offline (23.81% under maintenance and 16.67% decommissioned), evaluate the 20 maintenance assets to return them online quickly and increase active capacity.
 
-Capacity Planning: Focus growth and rack allocation around Server Rack Type B and HVAC Cooling Units, as they account for both the largest share of capacity and highest power load.
+**Capacity Planning:** Focus growth and rack allocation around Server Rack Type B and HVAC Cooling Units, as they account for both the largest share of capacity and highest power load.
 
-- Energy efficiency and Thermal monitoring
 
-HVAC & Server Rack B Power Optimization: Target Server Rack Type B (30.41% of power) and HVAC Cooling Units (27.89% of power) for energy-saving protocols or firmware/hardware efficiency upgrades.   
-Targeted Cooling in High-Temp Regions: Implement localized thermal management and enhanced cooling strategies in Mombasa and Kigali, which suffer from the highest average operating temperatures.   
-Investigate Seasonal Drop: Investigate the sharp power drop in August 2026 (~25K kWh vs ~100K kWh peak) to determine if it represents an operational outage, unrecorded downtime, or successful load-balancing
+- ### Energy efficiency and Thermal monitoring
 
-- Preventive maintenance
-Proactive Monitoring for High CPU Racks: Since higher CPU utilization triggers higher alert volumes, establish automated load-balancing for high-utilization assets, specifically targeting Premium tier customers who run the highest workloads.
-Prioritize E-Commerce & Healthcare Alert Mitigation: Allocate dedicated maintenance support to E-Commerce and Healthcare infrastructure to resolve recurring system alerts before they lead to unexpected downtime. 
+**HVAC & Server Rack B Power Optimization:** Target Server Rack Type B (30.41% of power) and HVAC Cooling Units (27.89% of power) for energy-saving protocols or firmware/hardware efficiency upgrades.
 
+**Targeted Cooling in High-Temp Regions:** Implement localized thermal management and enhanced cooling strategies in Mombasa and Kigali, which suffer from the highest average operating temperatures.
+
+**Investigate Seasonal Drop:** Investigate the sharp power drop in August 2026 (~25K kWh vs ~100K kWh peak) to determine if it represents an operational outage, unrecorded downtime, or successful load-balancing.
+
+
+- ### Preventive maintenance
+
+**Proactive Monitoring for High CPU Racks:** Since higher CPU utilization triggers higher alert volumes, establish automated load-balancing for high-utilization assets, specifically targeting Premium tier customers who run the highest workloads.
+
+**Prioritize E-Commerce & Healthcare Alert Mitigation:** Allocate dedicated maintenance support to E-Commerce and Healthcare infrastructure to resolve recurring system alerts before they lead to unexpected downtime.
 
 
 ---
