@@ -397,15 +397,21 @@ Similarly, thresholds such as CPU utilization above 85% and thermal readings abo
 
 ### 1. Energy Consumption
 
-#### Total Power Consumed: Total power consumption stands at 828.62K kWh
+✔ Total Power Consumed: Total power consumption stands at 828.62K kWh
+✔ Historical Peak & Trough: Power consumption peaked at approximately 100K kWh in January 2026 before dropping to a low of approximately 25K kWh in August 2026.
+✔ Consumption by Asset: Server Rack Type B accounts for the largest share of infrastructure power consumption at 222.64K kWh (30.41%), followed closely by HVAC Cooling Units (204.21K kWh / 27.89%)
+
 
 ### 2. Infrastructure Utilization
 
-[Finding]
+✔ Operational Status: Currently, 59.52% of assets (50 out of 84/88 total) are operational/online, with 23.81% (20 assets) in Maintenance and 16.67% (14 assets) Decommissioned.
+✔CPU Utilization: Average CPU utilization across the infrastructure is 53.83%.
+✔ Utilization by Contract Tier: Premium contract tier customers operate at the highest average CPU utilization (38.21%), followed by Dedicated (36.75%) and Standard (25.04%).
+✔ Capacity Distribution: HVAC Cooling Units provide the greatest share of overall rated capacity (out of 4K kW total capacity).
 
 ### 3. Thermal Performance
 
-[Finding]
+
 
 ### 4. System Alerts
 
