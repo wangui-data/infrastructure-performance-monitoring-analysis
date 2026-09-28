@@ -397,29 +397,47 @@ Similarly, thresholds such as CPU utilization above 85% and thermal readings abo
 
 ### 1. Energy Consumption
 
-✔ Total Power Consumed: Total power consumption stands at 828.62K kWh
+✔ Total Power Consumed: Total power consumption stands at 828.62K kWh.
+
 ✔ Historical Peak & Trough: Power consumption peaked at approximately 100K kWh in January 2026 before dropping to a low of approximately 25K kWh in August 2026.
+
 ✔ Consumption by Asset: Server Rack Type B accounts for the largest share of infrastructure power consumption at 222.64K kWh (30.41%), followed closely by HVAC Cooling Units (204.21K kWh / 27.89%)
+
 
 
 ### 2. Infrastructure Utilization
 
 ✔ Operational Status: Currently, 59.52% of assets (50 out of 84/88 total) are operational/online, with 23.81% (20 assets) in Maintenance and 16.67% (14 assets) Decommissioned.
+
 ✔CPU Utilization: Average CPU utilization across the infrastructure is 53.83%.
+
 ✔ Utilization by Contract Tier: Premium contract tier customers operate at the highest average CPU utilization (38.21%), followed by Dedicated (36.75%) and Standard (25.04%).
+
 ✔ Capacity Distribution: HVAC Cooling Units provide the greatest share of overall rated capacity (out of 4K kW total capacity).
 
+
 ### 3. Thermal Performance
+
+✔ Maximum Reading: The maximum thermal/temperature reading recorded across assets is 35.00
+
+✔ Regional Temperature Distribution: Mombasa records the highest average operating temperature among all regions, followed by Kigali, Nairobi West, Dar es Salaam, and Nairobi East
 
 
 
 ### 4. System Alerts
 
-[Finding]
+✔ Total Alert Volume: A total of 828 system alerts were recorded. 
+
+✔ Industry Breakdown: The E-Commerce sector generates the highest volume of infrastructure alerts, followed by Healthcare, Fintech, Media, and SaaS. 
+
+✔ Correlation: Higher CPU utilization directly coincides with an increased frequency of system alert activity across assets.   
+
 
 ### 5. Regional Performance
 
-[Finding]
+✔ Asset Concentration: Mombasa holds the largest concentration of deployed infrastructure assets, followed by Kigali, Nairobi West, Dar es Salaam, and Nairobi East.   
+
+✔ Regional Thermal Load: Mombasa’s high asset concentration correlates directly with its status as the region with the highest average operating temperature. 
 
 ---
 
@@ -429,12 +447,23 @@ Similarly, thresholds such as CPU utilization above 85% and thermal readings abo
 
 Recommendations will focus on:
 
-- Infrastructure utilization
-- Energy efficiency
-- Thermal monitoring
+- Infrastructure utilization and Asset management
+
+Address Maintenance Backlog: With over 40% of total assets offline (23.81% under maintenance and 16.67% decommissioned), evaluate the 20 maintenance assets to return them online quickly and increase active capacity.
+
+Capacity Planning: Focus growth and rack allocation around Server Rack Type B and HVAC Cooling Units, as they account for both the largest share of capacity and highest power load.
+
+- Energy efficiency and Thermal monitoring
+
+HVAC & Server Rack B Power Optimization: Target Server Rack Type B (30.41% of power) and HVAC Cooling Units (27.89% of power) for energy-saving protocols or firmware/hardware efficiency upgrades.   
+Targeted Cooling in High-Temp Regions: Implement localized thermal management and enhanced cooling strategies in Mombasa and Kigali, which suffer from the highest average operating temperatures.   
+Investigate Seasonal Drop: Investigate the sharp power drop in August 2026 (~25K kWh vs ~100K kWh peak) to determine if it represents an operational outage, unrecorded downtime, or successful load-balancing
+
 - Preventive maintenance
-- Capacity planning
-- Asset management
+Proactive Monitoring for High CPU Racks: Since higher CPU utilization triggers higher alert volumes, establish automated load-balancing for high-utilization assets, specifically targeting Premium tier customers who run the highest workloads.
+Prioritize E-Commerce & Healthcare Alert Mitigation: Allocate dedicated maintenance support to E-Commerce and Healthcare infrastructure to resolve recurring system alerts before they lead to unexpected downtime. 
+
+
 
 ---
 
